@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video src="video/example.mp4" controls></video>
+    <!--Пример создания видео, где атрибут "controls" - плеер с элементами управления-->
+
+
+    <video>
+        <source src="video/example.mp4" type="video.mp4">
+        <source src="video/example.mp4" type="video.webm">
+        <p>К сожалению ваш браузер не поддерживает данный формат видео</p>
+    </video>
+    <!--В примере выше указан случай, если браузер не поддерживает один из перечисленных форматов видео.
+    Тег "source" является путём до медиафайлов определённого формата, а атрибут "type" - инструкция,
+    как браузеру прочетать содержимое файла-->
+
+
+
+    <video 
+       src="video/example.mp4"
+       controls
+       width="480"
+       height="270"
+    ></video>
+    <!--Как и в случае изображения, для видео задаётся ширина и высота -->
+
+
+
+    <video src="video/example.mp4" autoplay muted></video>
+    <!--Атрибут "autoplay" отвечает за автовоспроизведение видео, а "muted" - воспроизведение без звука-->
+
+
+
+    <video src="video/example.mp4" autoplay loop></video>
+    <!--Атрибут "loop" позволяет циклично воспроизводить видео по его завершению-->
+
+
+
+    <video 
+       src="video/example.mp4"
+       controls
+       poster="./images/video-placeholder.jpg"
+    ></video>
+    <!--Атрибут "poster" добавляет превью для видео с указанным путём его загрузки и
+         в указанном формате изображения-->
+
+
+
+    <video src="video/example.mp4" playsinline></video>
+    <!--Атрибут "playsinline" менят стандартное поведение видеоплейера на мобильных устройствах так,
+    чтобы видео воспроизводилось не в полноэкранном режиме, а в стандартных рамках своего элемента-->
+
+
+
+    <audio controls>
+        <source src="./audio/example.mp3" type="audio.mp3">
+        <source src="./audio/example.ogg" type="audio.ogg">
+        <p>К сожалению ваш браузер не поддерживает данный формат аудио
+            <a href="./audio/example.mp3" download>скачкать</a>файл.
+        </p>
+    </audio>
+    <!--Аналогично примеру с видео выше.
+     В случае, если файл не поддерживается, всегда можно добавить ссылку на скачивание-->
+
+
+   
+     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A29f697ceff5c4518ab2fc5c49859f894f7709cb9da5f3c8f75f27a7a243a8843&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+    <!--Тег "iframe" позволяет добавить виджет с любым фнкционалом: погода, карта, видеоплеер и.т.д-->
+    
+    
+    
+
+    <iframe 
+    width="720" 
+    height="405" 
+    src="https://rutube.ru/play/embed/9c68f443351852709ef1809a368aca4d/" 
+    frameBorder="0" 
+    allow="clipboard-write; autoplay" 
+    webkitAllowFullScreen 
+    mozallowfullscreen 
+    allowFullScreen></iframe>
+    <!--Пример с видео со стороннего сайта-->
+
+
+
+    <iframe src="https://aleksanderlamkov.ru"
+    width="500" 
+    height="500"
+    frameborder="0">
+    </iframe>
+    <!--В этом примере указан вывод сайта на ваш сайт в окне, заданном параметрами высоты и ширины-->
+
+
+
+    
+</html>
